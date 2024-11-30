@@ -6,17 +6,23 @@
     <title>Мой сайт</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Добавим стили прямо в HTML для наглядности */
+        /* Стили для использования фонового изображения */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Высота экрана */
             text-align: center;
+            color: #333;
+
+            /* Настройки фона */
+            background-image: url('фон.png'); /* Укажите путь к изображению */
+            background-repeat: repeat; /* Повторение изображения */
+            background-attachment: scroll; /* Фон будет прокручиваться */
+            background-size: auto; /* Размер изображения остается исходным */
+        }
+
+        /* Добавляем отступы для теста прокрутки */
+        div {
+            padding: 100px 20px;
         }
     </style>
 </head>
@@ -24,6 +30,9 @@
     <div>
         <h1>Добро пожаловать!</h1>
         <p>Это мой сайт на GitHub Pages.</p>
+    </div>
+    <div>
+        <p>Содержание продолжается ниже...</p>
     </div>
 </body>
 </html>
